@@ -24,6 +24,18 @@ board = [
 modified_board = flood_fill(input_board=board, old=".", new="~", x=5, y=12)
 for row in modified_board:
     print(row)
+
+board = [
+    "......................",
+    "......##########......",
+    "......#........#......",
+    "......#........#......",
+    "......#........#####..",
+    "....###............#..",
+    "....#............###..",
+    "....##############....",
+]
+
 modified_board = flood_fill(input_board=board, old=".", new="~", x=1, y=1)
 for row in modified_board:
     print(row)
